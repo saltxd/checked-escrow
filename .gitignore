@@ -1,0 +1,10 @@
+node_modules/
+dist/
+contracts/out/
+contracts/cache/
+broadcast/
+.env
+.env.*
+console.jsonl
+.agents/
+.DS_Store

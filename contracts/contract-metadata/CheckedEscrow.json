@@ -1,0 +1,362 @@
+{
+  "contractAddress": "0xbe4846d71ebd15e33b9c54684e662d346431e35e",
+  "network": "ARC-TESTNET",
+  "contract_code_path": "/home/user/app/contracts/CheckedEscrow.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/CheckedEscrow.sol/CheckedEscrow.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0xbe4846d71ebd15e33b9c54684e662d346431e35e"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0xbe4846d71ebd15e33b9c54684e662d346431e35e",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xbe4846d71ebd15e33b9c54684e662d346431e35e",
+      "txHash": "0x36c001c9a7c30470c39d5c0feeb3c8b4c328824c9a889e0385f3a0f7245771cc",
+      "deployedAt": "2026-10-21T22:32:24.094Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "checker_",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "USDC",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IERC20"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "checker",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "credits",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "deposit",
+      "inputs": [
+        {
+          "name": "seller",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "deadline",
+          "type": "uint64",
+          "internalType": "uint64"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "escrowCount",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "escrows",
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "buyer",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "seller",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "deadline",
+          "type": "uint64",
+          "internalType": "uint64"
+        },
+        {
+          "name": "state",
+          "type": "uint8",
+          "internalType": "enum CheckedEscrow.State"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "refund",
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "reason",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "release",
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "verdict",
+          "type": "string",
+          "internalType": "string"
+        },
+        {
+          "name": "reportUrl",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "withdraw",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "event",
+      "name": "Deposited",
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "buyer",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "seller",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "deadline",
+          "type": "uint64",
+          "indexed": false,
+          "internalType": "uint64"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Refunded",
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "reason",
+          "type": "string",
+          "indexed": false,
+          "internalType": "string"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Released",
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "verdict",
+          "type": "string",
+          "indexed": false,
+          "internalType": "string"
+        },
+        {
+          "name": "reportUrl",
+          "type": "string",
+          "indexed": false,
+          "internalType": "string"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Withdrawn",
+      "inputs": [
+        {
+          "name": "recipient",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "DeadlineInPast",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "EscrowNotActive",
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "InvalidVerdict",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NoCredits",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotAuthorized",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotChecker",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SafeERC20FailedOperation",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "ZeroAddress",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ZeroAmount",
+      "inputs": []
+    }
+  ]
+}
