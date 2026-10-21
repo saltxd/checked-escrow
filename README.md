@@ -7,7 +7,7 @@ A check-before-you-pay USDC escrow on [Arc](https://arc.network).
 3. The checker either releases the money to the seller or refunds the buyer.
 4. Both sides then withdraw what they are owed (pull payments).
 
-Built with [Arc Studio](https://studio.arc.io).
+Built with [Arc Studio](https://studio.arc.io) ([the Studio project](https://studio.arc.io/app/f5d18397-f620-47ba-a966-af6d092c8931)).
 
 **Live app:** https://saltxd.github.io/checked-escrow/
 
