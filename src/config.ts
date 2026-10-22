@@ -27,7 +27,7 @@ registerChain(arcTestnet.id, arcTestnet.rpcUrls.default.http[0])
 registerChain(arcMainnet.id, arcMainnet.rpcUrls.default.http[0])
 
 export const config = createConfig({
-  chains: [arcTestnet, arcMainnet, mainnet], // mainnet needed for ENS resolution
+  chains: [arcMainnet, arcTestnet, mainnet], // mainnet needed for ENS resolution
   connectors: [injected()],
   transports: {
     [arcTestnet.id]: http(),
